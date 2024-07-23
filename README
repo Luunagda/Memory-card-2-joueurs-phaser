@@ -1,0 +1,24 @@
+# Memory Card Game
+
+Ce projet est un jeu de Memory Card développé avec Phaser. Il est conçu pour être joué à deux joueurs. La partie multijoueur a été conçu avec Socket.io.
+
+## Comment installer le jeu
+
+Il est nécessaire d'installer Node.js pour démarrer le jeu : `https://nodejs.org/fr`. Express et Socket.io sont nécessaire pour faire fonctionner le projet. Pour installer tous les packages nécessaire au projet, suivez les étapes suivantes :
+1. Ouvrir le terminal et placez vous dans le dossier memory-game-vierge.
+2. Réaliser la commande suivante pour installer les package : `npm install`. Maintenant, les packages nécessaire au bon fonctionnement du server sont installé.
+3. Se placer dans le dossier du jeu dans le terminal avec cette commande : `cd ./jeu`.
+4. Réaliser la commande suivante pour installer les packages nécessaire au jeu : `npm install`.
+5. Se replacer dans le dossier memory-game-vierge avec cette commande : `cd ..`.
+6. Maintenant, il ne suffit plus qu'à lancer le jeu.
+
+## Comment jouer
+
+1. Lancez le jeu en exécutant la commande : `node app.js` (avec node) ou `nodemon app.js` (avec nodemon)
+2. Ouvrez votre navigateur et accédez à l'URL suivante : `http://localhost:3000`
+3. Le jeu démarre lorsque vous aurez cliqué sur le menu et que deux joueurs sont connectés.
+4. Les joueurs jouent à tour de rôle en retournant deux cartes à la fois.
+5. Si les deux cartes retournées sont identiques, le joueur marque un point et peut rejouer.
+6. Si les cartes sont différentes, elles sont retournées face cachée et c'est au tour de l'autre joueur.
+7. Le jeu se poursuit jusqu'à ce que toutes les paires de cartes soient trouvées.
+8. Le joueur avec le plus grand nombre de points à la fin du jeu est déclaré vainqueur.
